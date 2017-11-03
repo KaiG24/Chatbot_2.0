@@ -29,12 +29,26 @@ public class Chatbot
 		this.content = null;
 		this.intro = null;
 		this.currentTime = null;
-		this.topics = null;
+		this.topics = new String [7];
 		this.verbs = new String [4];
-		this.followUps = null;
+		this.followUps = new String [5];
 		
 		buildVerbs();
+		buildTopics();
+		buildFollowups();
+		buildQuestions();
 		buildShoppingList();
+	}
+	
+	private void buildFollowups()
+	{
+		
+	}
+	
+	
+	private void buildTopics()
+	{
+		
 	}
 	
 	
@@ -73,19 +87,40 @@ public class Chatbot
 	
 	public String processConversation(String input)
 	{
-		return null;
+		String chatbotResponse = "";
+		chatbotResponse += "You said:" + "/n" + input + "/n";
+		
+		chatbotResponse += buildChatbotResponse();
+		
+		return chatbotResponse;
+	}
+	
+	private String buildChatbotResponse()
+	{
+	String response = "I ";
+	int random = (int) (Math.random()* verbs.length);
+	
+	response += verbs[random];
+	
+	random = (int) (Math.random()* topics.length);
+	response += " " + topics[random] + "./n";
+	
+	random = (int) (Math.random()* questions.length);
+	response += questions[random];
+	
+	return response;
 	}
 	
 	public boolean lengthChecker(String input)
 	{
 		boolean validLength = false;
 		
-		if (input !=null)
+		
+		
+		if(input != null && input.length() > 2)
 		{
 			validLength = true;
 		}
-		
-		if(input != null && input.length() > 2)
 		
 		return false;
 	}
@@ -199,7 +234,8 @@ public class Chatbot
 	{
 		this.content = content;
 	}
-}
-{
+
 
 }
+
+
