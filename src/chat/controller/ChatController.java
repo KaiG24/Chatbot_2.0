@@ -12,7 +12,8 @@ public class ChatController
 	
 	public ChatController()
 	{
-		
+		chatbot = new Chatbot("George");
+		display = new PopupDisplay();
 	}
 	
 	public void start()
