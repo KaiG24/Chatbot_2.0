@@ -38,6 +38,8 @@ public class Chatbot
 		buildFollowups();
 		buildQuestions();
 		buildShoppingList();
+		buildMovieList();
+		buildCuteAnimals();
 	}
 	
 	private void buildFollowups()
@@ -62,6 +64,10 @@ public class Chatbot
 	
 	private void buildMovieList()
 	{
+	//	movieList.add("Citizen Kane");
+	// movieList.add("Kill Bill vol. 1");	
+	// movieList.add("Pulp Fiction");
+	// movieList.add("
 		
 	}
 	
