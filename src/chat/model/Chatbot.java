@@ -48,7 +48,6 @@ public class Chatbot
 	
 	private void buildTopics()
 	{
-		topics[0] = 
 				
 	}
 	
