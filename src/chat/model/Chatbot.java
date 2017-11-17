@@ -64,11 +64,7 @@ public class Chatbot
 	
 	private void buildMovieList()
 	{
-	//	movieList.add("Citizen Kane");
-	// movieList.add("Kill Bill vol. 1");	
-	// movieList.add("Pulp Fiction");
-	// movieList.add("
-		
+	
 	}
 	
 	private void buildShoppingList()
