@@ -135,6 +135,14 @@ public class Chatbot
 	
 	public boolean htmlTagChecker(String input)
 	{
+		if (!input.contains("<") && !input.contains(">"))
+		{
+			return false;
+		}
+		else if (input.contains("<>"))
+		{
+			return false;
+		}
 		return false;
 	}
 	
