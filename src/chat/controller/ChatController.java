@@ -46,11 +46,12 @@ public class ChatController
 	
 	public String useCheckers(String text)
 	{
+		String response = null;
 		if(chatbot.contentChecker(text))
 		{
 			response += "This text matches the special content\n";
 		}
-		if(chatbot.cuteAnimaleMemeChecker(text))
+		if(chatbot.cuteAnimalMemeChecker(text))
 		{
 			response += "";
 		}

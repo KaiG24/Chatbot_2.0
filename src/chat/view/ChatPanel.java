@@ -19,7 +19,7 @@ public class ChatPanel extends JPanel
 	private JTextArea chatArea;
 	private SpringLayout appLayout;
 	private JButton checkerButton;
-	private JScrollPane chatScrollPe;
+	private JScrollPane chatScrollPane;
 	
 	public ChatPanel(ChatController appController)
 	{
@@ -59,7 +59,7 @@ public class ChatPanel extends JPanel
 		chatScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		chatScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		chatArea.setLineWrap(true);
-		chatArea.setWrap;
+		chatArea.setWrapStyleWord(true);
 	}
 	
 	private void  setupLayout()
