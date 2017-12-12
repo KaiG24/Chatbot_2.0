@@ -64,7 +64,6 @@ public class Chatbot
 	
 	private void buildMovieList()
 	{
-		movieList.add();
 		
 	}
 	

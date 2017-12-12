@@ -25,4 +25,11 @@ public class ChatFrame extends JFrame
 		this.setResizable(false);
 		this.setVisible(true);
 	}
+
+	public ChatController getBaseController()
+	{
+				return null;
+	}
+
+	
 }

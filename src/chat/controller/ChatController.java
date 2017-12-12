@@ -80,4 +80,14 @@ public class ChatController
 		return chatbot;
 	}
 
+	public Object getDisplay()
+	{
+		return null;
+	}
+
+	public Object getChatFrame()
+	{
+		return null;
+	}
+
 }
